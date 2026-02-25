@@ -3,7 +3,8 @@ import asyncio
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "8450802969:AAEX6WzC-yM4ZwvHOdDaZE-Xb6vUpTPYmHE"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_IDS = [5894877058, 77098280]
 
 groups = [
